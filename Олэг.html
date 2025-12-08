@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/книжка.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Серия игр Олэг</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="header-content">
+            <img src="книжка.png" alt="Логотип Олэг" class="logo">
+            
+            <!-- Бургер-меню для мобильных -->
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-button">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#characters">Персонажи</a></li>
+                    <li><a href="#gameplay">Геймплей</a></li>
+                    <li><a href="#items">Предметы</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="#contact">Ссылки</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Уникальный контент -->
+    <main class="main-content">
+        <!-- Секция главного заголовка -->
+        <section id="home" class="hero-section">
+            <h1 class="main-title">Серия игр Олэг</h1>
+            <img src="Олэг.jpg" alt="Олэг" class="main-image">
+            <br><h2 class="maintext">Серия игр Олэг представляют собой три игры, от трёх разных персонажей. К сожлению, пока готова только одна игра от лица Олега, поэтому это трудно называть серией, но я буду. Эта трилогия о группе друзей, которые проходят через свои wacky приключения, сталкиваясь с раными трудностями на пути. </h2></br>
+
+            </div>
+        </section>
+
+        <!-- Секция персонажей -->
+        <section id="characters" class="characters-section">
+            <h2 class="section-title">Персонажи</h2>
+            <img src="Карта.png" alt="Карта персонажей" usemap="#Chars" class="characters-map">
+            <map name="Chars">
+                <area shape="rectangle" coords="110,90,250,200" href="Дженни.html">
+                <area shape="circle" coords="360,130,68" href="Олэг личный.html">
+                <area shape="polygon" coords="490, 140, 570, 90, 630, 130, 540, 210, 520,190" href="Эска.html">
+            </map>
+        </section>
+
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <article class="news-article">
+                <h3 class="sidebar-title">Известные баги</h3>
+                <p class="smalltext">Некорректно работает UI, рекомендуется играть в маленьком формате во избежание ошибок.</p>
+            </article>
+            
+            <article class="tips-article">
+                <h3 class="sidebar-title">Советы игрокам</h3>
+                <p class="smalltext">Не тупите.</p>
+            </article>
+
+        </aside>
+
+        <!-- Секция геймплея -->
+        <section id="gameplay" class="hero-section">
+            <h2 class="section-title">Геймплей</h2>
+            <div class="container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2 class="sidebar-title">За Олега</h2>
+                <p class="smalltext">Мир глазами Олега выглядит смешным, неряшливым, как его характер. Дома выглядят совсем не как в реальности, имеют странную форму, необычные двери, цветные окна.</p>
+                <br><a href="Олэг личный.html">Подробнее</a></br>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2 class="sidebar-title">За Дженни</h2>
+                <p class="smalltext">Мир глазами Дженни в пастельных оттенках, с розовым фильтром. Тем не менее, он более реалистичный чем у Олега.</p>
+                <br><a href="Дженни.html">Подробнее</a></br>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2 class="sidebar-title">За Эскарпье</h2>
+                <p class="smalltext">Мир глазами Эса наиболее реалистичен, тем не менее, другие персонажи для него выглядят как животные, что отображает его внутреннего ребёнка.</p>
+                <br><a href="Эска.html" class="butt">Подробнее</a></br>
+                </div>
+            </div>
+        </section>
+
+        <section id="cum" class="hero-section">
+            <h2 class="section-title">В Олэга планируется добавить:</h2>
+            <div class="container">
+                    <div class="card">
+                        <div class="circle">
+                            <h2 class="main-title">1</h2>
+                        </div>
+                        <div class="content">
+                            <p class="smalltext">UI для адаптивного экрана в игре.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="circle">
+                            <h2 class="main-title">2</h2>
+                        </div>
+                        <div class="content">
+                            <p class="smalltext">Более качественная графика мира и более открытый мир.</p>
+                        </div>
+            
+                    </div>
+                    <div class="card">
+                        <div class="circle">
+                            <h2 class="main-title">3</h2>
+                        </div>
+                        <div class="content">
+                            <p class="smalltext">Дополнительные предметы и эмоции.</p>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+
+
+        <!-- Секция предметов -->
+        <p></p><br><section id="items" class="items-section">
+            <h2 class="section-title">Список предметов, используемых игроком:</h2>
+            <dl class="items-list">
+                <dt>Записная книжка Олега</dt>
+                <dd>Побитый блокнот, который Олэг нашёл на помойке</dd>
+                <dd>Записная книга со списком эмоций, которую Олэг использует для работы</dd>
+
+                <dt>Брелок-опоссум</dt>
+                <dd>Брелок, который Эскарпье всегда носит с собой.</dd>
+                <dd>Избитый жизнью плюшевый опоссум. Эскарпье подумал, что Олэг его сделал сам и поэтому он такой уродливый, но нет. Олэг нашёл его на помойке и подарил Эске</dd>
+
+                <dt>Розовые очки Дженни</dt>
+                <dd>Розовые очки, без которых Дженни не выходит на улицу</dd>
+
+                <dt>Рука из подвала</dt>
+                <dd>Оторванная рука в подвале Дженни. Неизвестно, чья она и существует ли она на самом деле</dd>
+
+                <dt>Зажигалка Олега</dt>
+                <dd>Он не курит. Но иногда он поджигает мусор и смотрит за тем, как он горит</dd>
+            </dl>
+        </section>
+        
+        <!-- Мои сайтики -->
+        <p></p>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Ссылочки</h2>
+            <div class="butts">
+                <a href="https://babkat-t.itch.io/oleg" class="butt">Ссылка на Олэга</a>
+                <p><br><a href="https://itch.io/profile/babkat-t" class="butt">Ссылка на Бабку(меня)</a></p>
+                <p><br><a href="form.html" class="butt">Оставить отзыв</a></p>
+                <p><br><a href="gallery.html" class="butt">Скрины игры</a></p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-content">
+        <address class="developer-info">
+            <strong>Разработчик сайта:</strong><br>Ну, типо я, Бабка<br>
+            Email: <a href="veryrealmail@gmail.ru">veryrealmail@gmail.ru</a><br>
+            Телефон: <a href="+7123456789">+7123456789</a>
+        </address>
+        
+        <div class="social-buttons">
+            <a href="#" class="social-btn telegram" title="Telegram">
+                <i class="fab fa-telegram social-icon"></i>
+            </a>
+            <a href="#" class="social-btn discord" title="Discord">
+                <i class="fab fa-discord social-icon"></i>
+            </a>
+            <a href="#" class="social-btn instagram" title="Instagram">
+                <i class="fab fa-instagram social-icon"></i>
+            </a>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#home" class="footer-link">Вернуться вверх</a>
+            <a href="#characters" class="footer-link">Вернуться к выбору персонажа</a>
+        </div>
+    </footer>
+</body>
+</html>
