@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/книжка.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Форма отзыва</title>
+</head>
+<body>
+    <main class="main-content">
+        <section id="home" action="form.html" class="hero-section">
+            <h1 class="form-title">Оставьте свой отзыв</h1>
+            
+
+            
+            <form method="POST">
+                <!-- регаться -->
+                <fieldset class="form">
+                    <legend class="formleg">Личная информация</legend>
+                        <div>
+                            <label for="name" class="smalltext">Имя</label>
+                            <input type="text" id="name" class="form-place" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="smalltext">Телефон</label>
+                            <input type="tel" class="form-place" id="phone" name="phone" placeholder="+7 (999) 999-99-99" pattern="\+7\s?[\(]?\d{3}[\)]?\s?\d{3}[\-]?\d{2}[\-]?\d{2}">
+                        </div>
+                        <div>
+                            <label for="email" class="smalltext">Email</label>
+                            <input type="email" class="form-place" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        <div>
+                            <label for="password" class="smalltext">Пароль (для создания аккаунта)</label>
+                            <input type="password" class="form-place" id="password" name="password" placeholder="Не менее 9 символов" minlength="9" required>
+                        </div>
+                </fieldset>
+
+                <!-- Оценка -->
+                <fieldset class="form">
+                    <legend class="formleg">Ваш отзыв</legend>
+                        <label class="smalltext">Общая оценка</label>
+                        <div class="maintext">
+                            <label for="rat5">
+                                <input type="radio" id="rat5" name="rat" value="5" checked>
+                                5
+                            </label>
+                            <label for="rat4">
+                                <input type="radio" id="rat4" name="rat" value="4">
+                                4
+                            </label>
+                            <label for="rat3">
+                                <input type="radio" id="rat3" name="rat" value="3">
+                                3
+                            </label>
+                            <label for="rat2">
+                                <input type="radio" id="rat2" name="rat" value="2">
+                                2
+                            </label>
+                            <label for="rat1">
+                                <input type="radio" id="rat1" name="rat" value="1">
+                                1
+                            </label>
+                        </div>
+                        <div>
+                        <label for="review-text" class="smalltext">Оставьте отзыв, плиз</label>
+                        <p>
+                            <textarea id="review-text" name="review_text" class="form-place" cols="50" rows="6" 
+                                    placeholder="Поделитесь вашими впечатлениями о сайте" 
+                                    minlength="10" maxlength="1000" required></textarea>
+                        </p>
+                    </div>
+                </fieldset>
+                <!-- Кнопки -->
+                <div class="contact-section">
+                    <button type="submit" class="butt">Отправить отзыв</button>
+                    <button type="reset" class="butt">Очистить форму</button>
+                    <p><br><a href="Олэг.html" class="butt">Вернуться</a><br></p>
+                </div>
+
+            <div class="interactive-buttons buttons">
+                <button id="like-btn" class="button like-btn">
+                    <span class="like-icon">♥</span> Нравится
+                </button>
+                <button id="draw-btn" class="button draw-btn">
+                    <span class="draw-icon">✏️</span> Рисовать сердечки
+                </button>
+            </div>
+            
+            <!-- Контейнер для сердечек -->
+            <div id="hearts-container" class="hearts-container"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        const textarea = document.getElementById('review-text');
+        const counter = document.getElementById('char-counter');
+    </script>
+</body>
+</html>
