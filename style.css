@@ -868,12 +868,12 @@ input:focus {
     background-color: #0088cc;
 }
 
-.social-btn.discord {
-    background-color: #5865F2;
+.social-btn.tumblr {
+    background-color: #001935; /* Темно-синий цвет Tumblr */
 }
 
-.social-btn.instagram {
-    background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #e13030, #fdc91d);
+.social-btn.pinterest {
+    background-color: #E60023; /* Красный цвет Pinterest */
 }
 
 /* Псевдоэлемент для анимации градиента */
